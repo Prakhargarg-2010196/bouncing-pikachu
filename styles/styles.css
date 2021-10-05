@@ -3,12 +3,12 @@
     padding: 0;
 }
 html{
-    background:url(/images/paul-volkmer-qVotvbsuM_c-unsplash.jpg) no-repeat center center;
+    background:url(../images/stars.jpg) no-repeat center center;
     background-size: cover;
 }
 body {
     position: relative;
-    background:url(/images/layer.svg) no-repeat center center;
+    background:url(../images/layer.svg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     overflow: hidden;
