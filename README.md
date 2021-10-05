@@ -16,3 +16,5 @@
  
  Moreover I have used the fade animation in the heading using concepts like for loop ,adding classes and setInterval function to create the effect of
  animation fade.
+
+[Deployed site](https://prakhargarg-2010196.github.io/javascriptAnimationProject/)
