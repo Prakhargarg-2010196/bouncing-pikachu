@@ -29,11 +29,11 @@ function complete()
 // code for animating the pikachu
 
 const field = document.getElementsByTagName("body");
-const ball = document.getElementById("ball");
+const pikachu = document.getElementById("pikachu");
 
 
-const maxX = field[0].clientWidth - ball.offsetWidth;
-const maxY = field[0].clientHeight - ball.offsetHeight;
+const maxX = field[0].clientWidth - pikachu.offsetWidth;
+const maxY = field[0].clientHeight - pikachu.offsetHeight;
 const gridSize = 500; // pixels
 
 const duration = 5; // seconds
@@ -51,9 +51,9 @@ function bounce(time) {
   y = 0.5 * Math.sin(x);
 
 
-  ball.style.left = Math.min(maxX*2, gridSize * x) + "px";
-  ball.style.bottom = maxY/8 + (gridSize * y) + "px";
-  ball.style.top = maxY/8 + (gridSize * y) + "px";
+  pikachu.style.left =  gridSize*x + "px";
+  pikachu.style.bottom =  (gridSize * y) + "px";
+  pikachu.style.top = (gridSize * y) + "px";
 
   if (progress >= 1.5) {
     start = null;
