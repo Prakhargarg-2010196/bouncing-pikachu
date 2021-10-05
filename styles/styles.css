@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background:url(/images/paul-volkmer-qVotvbsuM_c-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+}
+body {
+    position: relative;
+    background:url(/images/layer.svg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    }
+    
+    #ball{
+        position: absolute;
+        left: 0;
+        width: 350px;
+    }
+    .title{
+        color: rgb(37, 124, 201);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    span{
+        opacity: 0;
+        transition: all ease 0.4s;
+        
+    }
+    .fade{
+        opacity:1;
+    }

@@ -1,3 +1,31 @@
+//Code for the heading 
+let heading=document.querySelector(".title");
+let headingContent=heading.textContent;
+let headingArray=headingContent.split("");
+heading.textContent="";
+for(let i=0;i<headingArray.length;i++)
+{
+    heading.innerHTML+="<span>"+headingArray[i]+"</span>";
+}
+let char=0;
+let timer=setInterval(onTick,50);
+function onTick()
+{
+    const span=heading.querySelectorAll('span')[char];
+    span.classList.add('fade');
+    char++;
+    if(char===headingArray.length)
+    {
+        complete();
+        return;
+    }
+}
+function complete()
+{
+    clearInterval(timer);
+    timer=null;
+}
+
 // code for animating the pikachu
 
 const field = document.getElementsByTagName("body");
@@ -6,9 +34,9 @@ const ball = document.getElementById("ball");
 
 const maxX = field[0].clientWidth - ball.offsetWidth;
 const maxY = field[0].clientHeight - ball.offsetHeight;
+const gridSize = 500; // pixels
 
 const duration = 5; // seconds
-const gridSize = 500; // pixels
 
 let start = null;
 
@@ -29,9 +57,9 @@ function bounce(time) {
 
   if (progress >= 1.5) {
     start = null;
-    // requestAnimationFrame(step);
 
   }
   requestAnimationFrame(bounce);
 }
 requestAnimationFrame(bounce);
+
